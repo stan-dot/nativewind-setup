@@ -4,9 +4,17 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
     <View>
-      <View style={styles.getStartedContainer}>
+      <View
+      className='items-center mx-20'
+      // style={styles.getStartedContainer}
+      
+      >
         <Text
-          style={styles.getStartedText}>
+
+className='font-xl h-10 text-center text-slate-50 bg-red-800'
+          // style={styles.getStartedText}
+          
+          >
           Open up the code for this screen:
         </Text>
 
