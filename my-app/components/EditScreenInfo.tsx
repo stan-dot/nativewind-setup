@@ -16,14 +16,20 @@ export default function EditScreenInfo({ path }: { path: string }) {
         </View>
 
         <Text
-          style={styles.getStartedText}>
+          // style={styles.getStartedText}
+          className='font-2xl leading-6 text-center text-white'
+        
+        >
           Change any of the text, save the file, and your app will automatically update.
         </Text>
       </View>
 
       <View style={styles.helpContainer}>
         <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
-          <Text style={styles.helpLinkText} >
+          <Text
+            // style={styles.helpLinkText}
+          className='font-2xl leading-6 text-center text-white'
+          >
             Tap here if your app doesn't automatically update after making changes
           </Text>
         </TouchableOpacity>
