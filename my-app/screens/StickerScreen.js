@@ -3,7 +3,7 @@ import * as ImagePicker from 'expo-image-picker';
 import * as MediaLibrary from 'expo-media-library';
 import { StatusBar } from 'expo-status-bar';
 import { useRef, useState } from 'react';
-import { Platform, StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View, Text } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { captureRef } from 'react-native-view-shot';
 import Button from '../stickerComponents/Button';
@@ -16,7 +16,7 @@ import ImageViewer from '../stickerComponents/ImageViewer';
 
 const PlaceholderImage = require("../assets/images/background-image.png");
 
-export function HomeScreen() {
+export function StickerScreen() {
 
   const [selectedImage, setSelectedImage] = useState(null);
   const [showAppOptions, setShowAppOptions] = useState(false);
@@ -110,11 +110,11 @@ export function HomeScreen() {
           <Button label='Use this photo' onPress={() => setShowAppOptions(true)} />
         </View>
       )}
-    <View className="w-40 h-40 bg-cyan-300">
+    {/* <View className="w-40 h-40 bg-cyan-300">
       <Text className="text-red-700">
         hello!
       </Text>
-    </View>
+    </View> */}
     <StatusBar style="light" />
     <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
       {/**here list of emoji components */}
